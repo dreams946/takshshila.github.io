@@ -53,18 +53,19 @@
  login_btn.addEventListener("click", function(){
     let login_email = document.getElementById('floatingInput');
     let login_password = document.getElementById('floatingPassword');
-    console.log(email.value);
-    console.log(password.value);
+   
     
-    signInWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, login_email.value, login_password.value )
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
+      console.log("user=>", user)
       // ...
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
+      console.log("error=>", errorMessage)
     });
 
  })
