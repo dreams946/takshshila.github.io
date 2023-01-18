@@ -27,8 +27,7 @@
  register_btn.addEventListener("click", function(){
     let email = document.getElementById('floatInput');
     let password = document.getElementById('floatPassword');
-    console.log(email.value);
-    console.log(password.value);
+    
     
     createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
