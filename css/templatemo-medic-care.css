@@ -17,6 +17,8 @@ https://templatemo.com/tm-566-medic-care
   --title-color:                  #565758;
   --p-color:                      #212529;
   --border-color:                 #eaeaea;
+  --bg-blu-color:                 #1175bc;
+  --bg-grn-color:                  #16a99e;
 
   --body-font-family:             'Open Sans', sans-serif;
 
@@ -608,7 +610,7 @@ strong {
 }
 
 .booking-form #submit-button {
-  background: var(--dark-color);
+  background: var(--bg-blu-color);
   border-bottom: 0;
   font-weight: var(--font-weight-semibold);
   color: var(--white-color);
@@ -617,7 +619,7 @@ strong {
 }
 
 .booking-form #submit-button:hover {
-  background: var(--primary-color);
+  background: var(--bg-grn-color);
 }
 
 /*---------------------------------------
